@@ -1,0 +1,9 @@
+.pytest_cache
+*.pyc
+*.slurm_out
+slurm*.out
+*/*.ipynb_checkpoints
+.idea/*
+logs/*
+models/*
+test_data/*

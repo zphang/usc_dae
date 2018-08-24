@@ -1,0 +1,16 @@
+{
+  "sys_path": "path_to_your_code",
+  "vector_cache_path": "path_to_glove_emb",
+  "data_dict": {
+    "gigaword": {
+      "data_path": "path_to_gigaword_train_file",
+      "vocab_path": "path_to_gigaword_vocab"
+    }
+  },
+  "log_folder_path": "path_to_save_logs",
+  "model_save_path": "path_to_save_models",
+  "nli_vector_file_name": "path_to_infersent",
+  "nli_code_path": "path_to_infersent_code",
+  "nli_pickle_path": "path_to_nli_saved_model",
+  "use_gpu": true
+}
