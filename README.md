@@ -28,6 +28,8 @@ Gigaword data can be downloaded from : https://github.com/harvardnlp/sent-summar
 
 This is used to locate the datasets, embeddings, whether you want to use gpu, etc. on your computer. You can see an example configuration at ```env_configs/env_config.json```. You only need to set nli variables if you use InferSent embeddings. 
 
+Then setup the variable `NLU_ENV_CONFIG_PATH` to point to that file (e.g: `export NLU_ENV_CONFIG_PATH="env_configs/env_config.json"`). 
+
 ### Step 3: Train the model
 
 Simply run:
