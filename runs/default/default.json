@@ -3,7 +3,7 @@
   "dataset_name": "gigaword",
   "length_countdown": "normal",
   "env_config_path": "",
-  "vector_file_name": "glove.6B.100d.txt",
+  "vector_file_name": "glove.6B.300d.txt",
   "max_vocab": 20000,
   "max_sentence_length": 60,
   "log_step": 50,

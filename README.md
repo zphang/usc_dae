@@ -1,6 +1,6 @@
 # Experiments in Unsupervised summarization
 
-This is a [Pytorch](https://github.com/pytorch/pytorch) implementation of the summarization methods described in Unsupervised Sentence Compression using Denoising Autoencoders (CoNLL 2018). It features denoising additive auto-encoders with optional NLI hidden state initialization (based on [Infersent](https://github.com/facebookresearch/InferSent)).
+This is our [Pytorch](https://github.com/pytorch/pytorch) implementation of the summarization methods described in Unsupervised Sentence Compression using Denoising Autoencoders (CoNLL 2018). It features denoising additive auto-encoders with optional NLI hidden state initialization (based on [Infersent](https://github.com/facebookresearch/InferSent)).
 
 ![Model architecture](architecture.png)
 
@@ -61,3 +61,9 @@ To run evaluation, simply run:
 files2rouge summaries.txt references.txt
 ```
 
+## FAQ
+
+* **Random seed**: We did not use a random seed nor random restarts for the results in the paper
+* **Teacher forcing**: We used teacher forcing in all of our experiments
+* **Beam search**: We decoded using greedy decoding only, never using beam search
+* **Added noise**: Is done on a sentence-per-sentence basis, not based on the max length in a batch. This is critical for performance
