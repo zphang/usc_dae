@@ -66,7 +66,7 @@ def masked_nllloss(logprobs, target, lengths, device):
     return (
         (loss_raw * device(
           Variable(loss_mask.view(-1)))).sum()
-        / loss_mask.sum()
+        / device(loss_mask).sum()
     )
 
 
