@@ -99,7 +99,7 @@ class Inference:
         self.model.eval()
         batch_size = len(sent_batch)
 
-        ids, lengths = self.dictionary.sentences2ids(
+        ids, lengths, _ = self.dictionary.sentences2ids(
             sent_batch, sos=False, eos=True)
         ids_batch = self.device(Variable(torch.LongTensor(ids), volatile=True))
         hidden = self.device(self.model.encoder.initial_hidden(batch_size))
